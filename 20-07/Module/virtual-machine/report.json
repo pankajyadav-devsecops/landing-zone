@@ -1,0 +1,22 @@
+[
+ {
+  "RuleID": "terraform-admin-password",
+  "Description": "Detect hardcoded admin password",
+  "StartLine": 25,
+  "EndLine": 25,
+  "StartColumn": 6,
+  "EndColumn": 37,
+  "Match": "admin_password = \"Password1234!\"",
+  "Secret": "admin_password = \"Password1234!\"",
+  "File": "main.tf",
+  "SymlinkFile": "",
+  "Commit": "",
+  "Entropy": 4.1403193,
+  "Author": "",
+  "Email": "",
+  "Date": "",
+  "Message": "",
+  "Tags": [],
+  "Fingerprint": "main.tf:terraform-admin-password:25"
+ }
+]
