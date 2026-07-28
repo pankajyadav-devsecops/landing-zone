@@ -30,5 +30,5 @@ module "vm" {
 }
 module "nsgs" {
   source = "../../Module/NSG"
-  
+  nsgs = var.nsgs
 }

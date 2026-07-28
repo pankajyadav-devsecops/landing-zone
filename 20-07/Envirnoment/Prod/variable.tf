@@ -3,6 +3,5 @@ variable "vnets" {}
 variable "subnets" {}
 variable "pip" {}
 variable "nics" {}
-variable "vms" {
-  
-}
+variable "vms" {}
+variable "nsgs"{}
