@@ -28,7 +28,3 @@ module "vm" {
     depends_on = [ module.nic ]
   
 }
-module "nsgs" {
-  source = "../../Module/NSG"
-  nsgs = var.nsgs
-}
