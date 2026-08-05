@@ -9,7 +9,7 @@ module "vnets" {
 }
 module "subnets" {
   source = "../../Module/subnet"
-  subnets = var.subnets
+  subnets1 = var.subnets1
   depends_on =[module.vnets]
 }
 module "pips"{
@@ -20,7 +20,7 @@ module "pips"{
 module "nic" {
     source = "../../Module/nic"
   nics =var.nics
-  depends_on = [ module.subnets, module.pips ]
+  depends_on = [ module.subnets1, module.pips ]
 }
 module "vm" {
     source = "../../Module/virtual-machine"
